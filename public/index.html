@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>More Practice</title>
 </head>
 <body>
-    <h1>Express practice</h1>
-
-    <ul>
-        <li class="form">
+    <main>
+        <h1>Express practice</h1>
+        <div>
             <input type="text" name="Name" id="name">
-        </li>
+            <button type="submit" id="add-btn">Submit</button>
+        </div>     
 
-        <li class="form">
-            <button type="submit" id="button">Submit</button>
-        </li>
-    </ul>
+        <div>
+            <input type="text" placeholder="Search by Name" id="search-input">
+            <button type="submit" id="search-btn">search</button>
+        </div>
 
+        <table id="table">
+
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+        
+    </main>
+    <script src="index.js"></script>
 </body>
 </html>
