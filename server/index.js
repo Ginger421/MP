@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended : false }));
 var PORT = 3001;
 
 //create post
@@ -15,7 +15,7 @@ var PORT = 3001;
 //read get
 app.get('/getAll', (req, res) => {
     console.log("got it")
-    response.json({ success: true })
+    response.json({ success : true })
 })
 //update put
 

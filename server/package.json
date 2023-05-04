@@ -9,7 +9,7 @@
     "start": "node index.js",
     "seeds": "/seeds.sql"
   },
-  "author": "",
+  "author": "Virginia 'Ginger' Owen",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
