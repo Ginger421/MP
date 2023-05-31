@@ -1,5 +1,6 @@
 import express, { response } from "express";
 import cors from "cors";
+//import connection from '/db'; 
 import dotenv from "dotenv";
 dotenv.config();
 

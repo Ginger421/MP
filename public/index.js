@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function loadHTMLTable(data) {
 
     const table = document.querySelector("table tbody");
+    let tableHTML = " ";
 
     if (data.length === 0) {
-        table.innerHTML="<tr><td class='no-data' colspan='5' >no data</tr></td>"
+        table.innerHTML="<tr><td class='no-data' colspan='5' >Table is empty</tr></td>"
     }
 }
