@@ -1,8 +1,8 @@
-import express, { response } from "express";
+import express from "express";
+//const express = require('express'); 
 import cors from "cors";
 //import connection from '/db'; 
-import dotenv from "dotenv";
-dotenv.config();
+// require('dotenv').config();
 
 const app = express();
 
@@ -14,8 +14,7 @@ var PORT = 3001;
 //create post
 
 //read get
-app.get('/getAll', (req, res) => {
-    console.log("got it")
+app.get('/getAll', (req, response) => {
     response.json({ success : true })
 })
 //update put
