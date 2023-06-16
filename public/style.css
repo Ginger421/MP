@@ -2,6 +2,8 @@ main {
     width: 50%;
     margin: 50px auto;
     text-align: center;
+    color: navy;
+    font-family: cursive;
 }
 
 table {

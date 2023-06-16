@@ -4,7 +4,7 @@ CREATE DATABASE example_db
 
 USE example_db
 
-CREATE TABLE first (
+CREATE TABLE main (
     id INT NOT NULL,
     name VARCHAR(30),
     PRIMARY KEY (id),
