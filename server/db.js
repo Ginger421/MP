@@ -12,7 +12,7 @@ var connection = mysql.createConnection(
     host: 'localhost',
     user: user,
     password: password,
-    database: 'example_db'
+    database: 'fullstack_db'
 });
 
 module.exports = connection;
