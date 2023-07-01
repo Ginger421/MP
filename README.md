@@ -26,7 +26,7 @@ After installing the app users can select from a list and edit the list
 Further development needs to be done on the projects front end.
 
 ## Testing 
-No testing eas done
+No testing was done
 
 ## Questions
 Email: gingerowen0421@gmail.com
