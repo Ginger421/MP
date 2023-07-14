@@ -1,13 +1,12 @@
-import express from "express";
-//const express = require('express'); 
+//import dependencies and mudules
+import mysql2 from 'mysql2';
+import express from "express"; 
 import cors from "cors";
-//import connection from '/db'; 
-//require('dotenv').config();
 import dotenv from "dotenv"
 dotenv.config();
 let PORT = process.env.PORT;
+import connection from './db.js';
 const app = express();
-
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
