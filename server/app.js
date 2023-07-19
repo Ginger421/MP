@@ -19,8 +19,12 @@ app.use(express.urlencoded({ extended : false }));
 app.get('/getAll', (req, response) => {
     const db = DbService.getDbServiceInstance();
 
+    const result = db.getAllData();
 
-    response.json({ success : true })
+    result
+    .then (data => response.json({data : data})) 
+    .catch(err => console.log(err))
+    
 });
 
 //update put
