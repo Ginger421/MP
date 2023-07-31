@@ -22,6 +22,7 @@ If you wish to access the application locally, clone the repo on GitHub, run npm
 After installing the app users can select from a list and edit the list
 
 ## License
+![image](https://user-images.githubusercontent.com/101539821/195421205-75d9058a-9528-4224-8a53-491b47f330e9.png)
 
 ## How to Contribute 
 Further development needs to be done on the projects front end.
