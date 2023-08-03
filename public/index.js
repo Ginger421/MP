@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 function loadHTMLTable(data) {
 
     const table = document.querySelector("table tbody");
+
+    console.log(data);
     let tableHTML = " ";
 
     if (data.length === 0) {

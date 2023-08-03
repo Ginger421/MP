@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended : false }));
 app.get('/getAll', (req, response) => {
     const db = DbService.getDbServiceInstance();
 
-    const result = db.getAll(); //changed from getAllData think it was a typo
+    const result = db.getAll(); 
 
     result
     .then (data => response.json({data : data})) 
