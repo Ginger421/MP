@@ -38,4 +38,4 @@ app.post('/insert', (request, response) => {
 
 app.listen(PORT, ()=>console.log("app listening on port" + PORT));
 
-//stopped at 33minutes 
+//stopped at 36minutes  cannot get console log from index.js to work
