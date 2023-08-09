@@ -1,21 +1,21 @@
 main {
-    width: 50%;
-    margin: 50px auto;
+    width: 100%;
+    height: 100vh;
+    
     text-align: center;
-    color: navy;
+    color: rgb(202, 202, 224);
+    background: linear-gradient(#006466ff,
+    #4d194dff);
     font-family: cursive;
-    background-color: #006466ff;
-    --midnight-green: #065a60ff;
-    --midnight-green-2: #0b525bff;
-    --midnight-green-3: #144552ff;
-    --charcoal: #1b3a4bff;
-    --prussian-blue: #212f45ff;
-    --space-cadet: #272640ff;
-    --dark-purple: #312244ff;
-    --dark-purple-2: #3e1f47ff;
-    --palatinate: #4d194dff;;
 }
-
+/*
+#065a60ff
+    #0b525bff
+  #144552ff
+     #1b3a4bff
+    #212f45ff
+   #272640ff
+    #312244ff #3e1f47ff*/
 table {
     margin: 50px auto;
 }
