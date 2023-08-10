@@ -12,12 +12,22 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
 
+//DECLARED THIS VAR GLOBALLY SO WILL COMMENT OUT THE VARIABLE IN app.get
+const db = DbService.getDbServiceInstance();
 
 //create post
+app.post('/postData', (req, response) => {
+
+    const result = db.postData
+
+   //commented out to test code
+   // result.then (data => )
+
+})
 
 //read get
 app.get('/getAll', (req, response) => {
-    const db = DbService.getDbServiceInstance();
+    //const db = DbService.getDbServiceInstance();
 
     const result = db.getAll(); 
 
