@@ -1,30 +1,38 @@
 main {
-    width: 100%;
-    height: 100vh;
-    
-    text-align: center;
-    color: rgb(202, 202, 224);
-    background: linear-gradient(#006466ff,
-    #4d194dff);
-    font-family: cursive;
+	width: 100%;
+	height: 100vh;
+
+	text-align: center;
+	color: rgb(202, 202, 224);
+	background: linear-gradient(
+        #006466ff,
+        #065a60ff,
+        #0b525bff,
+        #144552ff,
+        #1b3a4bff,
+        #212f45ff,
+        #272640ff,
+        #312244ff,
+        #3e1f47ff,
+        #4d194dff
+	);
+	font-family: cursive;
 }
 /*
-#065a60ff
-    #0b525bff
-  #144552ff
-     #1b3a4bff
-    #212f45ff
-   #272640ff
-    #312244ff #3e1f47ff*/
+
+    */
 table {
-    margin: 50px auto;
-}
-  
-table, th, td {
-    border-collapse: collapse;
-    border: 1px solid darkblue;
+	margin: 50px auto;
 }
 
-th, td {
-    padding: 5px;
+table,
+th,
+td {
+	border-collapse: collapse;
+	border: 1px solid darkblue;
+}
+
+th,
+td {
+	padding: 5px;
 }
