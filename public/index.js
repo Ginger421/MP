@@ -6,7 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
      
 })
 
+//grab data from button
+const addBtn = document.getElementById("add-btn");
 
+//callbackfunction
+addBtn.onclick = function() {
+    
+}
 function loadHTMLTable(data) {
 
     const table = document.querySelector("table tbody");

@@ -16,7 +16,8 @@ app.use(express.urlencoded({ extended : false }));
 const db = DbService.getDbServiceInstance();
 
 //create post
-app.post('/postData', (req, response) => {
+app.post('/postData', (request, response) => {
+    console.log(request.body);
 
     const result = db.postData
 
