@@ -7,11 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 //grab data from button
-const addBtn = document.getElementById("add-btn");
+const addBtn = document.getElementById("#add-btn");
 
-//callbackfunction
+//callbackfunction 
 addBtn.onclick = function() {
-    
+    const nameData = document.getElementById('#name');
+    const name = nameData.value;
+    nameData = "";
+
+    fetch('http://localhost:3001/insert')
 }
 function loadHTMLTable(data) {
 
