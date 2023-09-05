@@ -7,16 +7,21 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 //grab data from button
-const addBtn = document.getElementById("#add-btn");
+const addBtn = document.getElementById("add-btn");
 
 //callbackfunction 
 addBtn.onclick = function() {
-    const nameData = document.getElementById('#name');
+    const nameData = document.getElementById('name');
     const name = nameData.value;
-    nameData = "";
+    nameData.value = "";
 
-    fetch('http://localhost:3001/insert')
-}
+    fetch('http://localhost:3001/insert', {
+    headers: {'Content-type':'application/json'},  //used Headers , instaed of headers :
+    Method:'POST',
+    body:JSON.stringify({ name : name })
+}); //end fetch
+} //end addBtn.onClick
+
 function loadHTMLTable(data) {
 
     const table = document.querySelector("table tbody");
