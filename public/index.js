@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 document.addEventListener("DOMContentLoaded", function () {
     //removed getAll from fetch to see if helps
     fetch('http://localhost:3001/getAll')
@@ -19,8 +21,16 @@ addBtn.onclick = function() {
     headers: {'Content-type':'application/json'},  //used Headers , instaed of headers :
     Method:'POST',
     body:JSON.stringify({ name : name })
-}); //end fetch
+}) //end fetch
+    .then(response => response.json())
+    //end .then
+    .then(data => insertRow(data['data']))
+    ; 
 } //end addBtn.onClick
+
+function insertRow (data) {
+
+} //end insertRow
 
 function loadHTMLTable(data) {
 
