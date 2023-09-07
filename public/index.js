@@ -1,4 +1,4 @@
-const { response } = require("express");
+//const { response } = require("express");
 
 document.addEventListener("DOMContentLoaded", function () {
     //removed getAll from fetch to see if helps

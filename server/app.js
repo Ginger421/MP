@@ -30,7 +30,7 @@ app.post('/postData', (request, response) => {
 app.get('/getAll', (req, response) => {
     //const db = DbService.getDbServiceInstance();
 
-    const result = db.getAll(); 
+    const result = db.getAll(); //getAll is fromDbService.js
 
     result
     .then (data => response.json({data : data})) 
@@ -39,9 +39,7 @@ app.get('/getAll', (req, response) => {
 });
 
 //update put
-app.post('/insert', (request, response) => {
 
-});
 
 //delete delete
 
