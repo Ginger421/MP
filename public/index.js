@@ -1,12 +1,10 @@
-//const { response } = require("express");
-
 document.addEventListener("DOMContentLoaded", function () {
     //removed getAll from fetch to see if helps
-    fetch('http://localhost:3001/getAll')
+    fetch('http://localhost:3001/all')
     .then(response => response.json())
     .then(data => loadHTMLTable(data['data']));
      
-})
+});
 
 //grab data from button
 const addBtn = document.getElementById("add-btn");
@@ -16,11 +14,12 @@ addBtn.onclick = function() {
     const nameData = document.getElementById('name');
     const name = nameData.value;
     nameData.value = "";
+    //console.log(name) this works
 
-    fetch('http://localhost:3001/insert', {
-    headers: {'Content-type':'application/json'},  //used Headers , instaed of headers :
+    fetch('http://localhost:3001/addData', {
     Method:'POST',
-    body:JSON.stringify({ name : name })
+    body:JSON.stringify({ name : 'name' }),
+    headers: {'Content-Type': 'application/json'}//used Headers , instaed of headers :
 }) //end fetch
     .then(response => response.json())
     //end .then
@@ -29,7 +28,7 @@ addBtn.onclick = function() {
 } //end addBtn.onClick
 
 function insertRow (data) {
-
+    //code to be added...
 } //end insertRow
 
 function loadHTMLTable(data) {

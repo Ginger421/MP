@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended : false }));
 const db = DbService.getDbServiceInstance();
 
 //create post
-app.post('/postData', (request, response) => {
+app.post('/addData', (request, response) => {
     console.log(request.body);
 
     const result = db.postData
@@ -27,7 +27,7 @@ app.post('/postData', (request, response) => {
 })
 
 //read get
-app.get('/getAll', (req, response) => {
+app.get('/all', (req, response) => {
     //const db = DbService.getDbServiceInstance();
 
     const result = db.getAll(); //getAll is fromDbService.js
