@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    //removed getAll from fetch to see if helps
     fetch('http://localhost:3001/all')
     .then(response => response.json())
     .then(data => loadHTMLTable(data['data']));
@@ -17,8 +16,9 @@ addBtn.onclick = function() {
     //console.log(name) this works
 
     fetch('http://localhost:3001/addData', {
-    Method:'POST',
+    method:'POST',
     body:JSON.stringify({ name : 'name' }),
+    mode: "cors",
     headers: {'Content-Type': 'application/json'}//used Headers , instaed of headers :
 }) //end fetch
     .then(response => response.json())
