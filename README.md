@@ -19,7 +19,7 @@ Live site
 ## Installation 
 If you wish to access the application locally, clone the repo on GitHub, run npm i to install dependencies then open the application using npm start and open the browser with the preferred local host. While testing users must the front end and backend simultanously
 ## Usage
-After installing the app users can select from a list and edit the list
+After installing the app users can select from a list and edit the list. Or, users can visit the site at ______
 
 ## License
 ![image](https://user-images.githubusercontent.com/101539821/195421205-75d9058a-9528-4224-8a53-491b47f330e9.png)

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(response => response.json())
     .then(data => loadHTMLTable(data['data']));
      
-});
+}); 
 
 //grab data from button
 const addBtn = document.getElementById("add-btn");
@@ -42,4 +42,4 @@ function loadHTMLTable(data) {
     if (data.length === 0) {
         table.innerHTML="<tr><td class='no-data' colspan='5' >Table is empty</tr></td>"
     }
-}
+} //end loadHTMLTable
