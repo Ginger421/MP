@@ -6,7 +6,6 @@ dotenv.config();
 
 let instance = null;
 
-
 const connection = mysql2.createConnection(
     {
         host: 'localhost',
@@ -47,8 +46,10 @@ class DbService {
     } //end getAll()
 
     async insertNewName(name) {
-        try { //stopped 42:36
-            
+        try { 
+            const response = await new Promise((resolve,reject) => {
+                const query = "INSERT INTO " //START HERE STOPPED 42
+            }) //end const response
         } catch (error) {
             console.log(error);
         }
