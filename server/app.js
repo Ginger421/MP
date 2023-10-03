@@ -17,7 +17,8 @@ const db = DbService.getDbServiceInstance();
 
 //create post
 app.post('/addData', (request, response) => {
-    console.log(request.body);
+    //console.log(request.body);
+    const { name } = request.body;
 
     const result = db.postData
 

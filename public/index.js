@@ -18,11 +18,10 @@ addBtn.onclick = function() {
     fetch('http://localhost:3001/addData', {
     method:'POST',
     body:JSON.stringify({ name : name }),
-    mode: "cors",
+    // mode: "cors",
     headers: {'Content-Type': 'application/json'}
 }) //end fetch
     .then(response => response.json())
-    //end .then
     .then(data => insertRow(data['data']))
     ; 
 } //end addBtn.onClick

@@ -37,15 +37,24 @@ class DbService {
                 if (err) reject (new Error(err.message));
                 resolve(results);
                })
-            })
+            }) //end response 
             
             return response;
             //console.log(response)
         } catch (error) {
             console.log(error);
         }
-    }
-}
+    } //end getAll()
+
+    async insertNewName(name) {
+        try { //stopped 42:36
+            
+        } catch (error) {
+            console.log(error);
+        }
+    } //end async insertNewName
+
+} //end DbService
 
 //module.exports = DbService;
 
