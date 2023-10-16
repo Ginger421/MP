@@ -13,6 +13,7 @@ Live site
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#)
+* [How to contribute](#contribute)
 * [Testing](#testing)
 * [Questions](#questions)
 
@@ -34,3 +35,6 @@ No testing was done
 Email: gingerowen0421@gmail.com
 GitHub: https://github.com/Ginger421
 
+
+
+[def]: #contribute
