@@ -20,7 +20,7 @@ app.post('/addData', (request, response) => {
     //console.log(request.body);
     const { name } = request.body;
 
-    const result = db.postData
+    const result = db.createNew() //waspostData but is createNew() in DbService
 
    //commented out to test code
    // result.then (data => )
