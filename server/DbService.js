@@ -48,7 +48,7 @@ class DbService {
     async createNew(name) { //changed from insertNewName
         try { 
             const response = await new Promise((resolve,reject) => {
-                const query = "INSERT INTO fullstack_db (name, date_added) VALUES ? " //stopped 43
+                const query = "INSERT INTO fullstack_db (name, date_added) VALUES (?, ?);"; //stopped 43
 
                 connection.query(query, (error, results) => {
                     if (error) reject (new Error(error.message));
