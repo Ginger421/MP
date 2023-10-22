@@ -19,11 +19,11 @@ const db = DbService.getDbServiceInstance();
 app.post('/addData', (request, response) => {
     //console.log(request.body);
     const { name } = request.body;
-
-    const result = db.createNew() //waspostData but is createNew() in DbService
-
-   //commented out to test code
-   // result.then (data => )
+ 
+    const result = db.createNew(name); 
+    result
+    .then(data => response.json([success , true]))
+    .catch(err => console.log(err))
 
 })
 
