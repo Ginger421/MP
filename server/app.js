@@ -22,7 +22,7 @@ app.post('/addData', (request, response) => {
  
     const result = db.createNew(name); 
     result
-    .then(data => response.json([success , true]))
+    .then(data => response.json(["success" , true]))
     .catch(err => console.log(err))
 
 })
