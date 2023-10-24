@@ -60,10 +60,11 @@ class DbService {
                 ) //end connection.query
             }); //end const insertId
             //return response;
+
         } catch (error) {
             console.log(error);
         }
-        //console.log(insertId)
+        
     } //end async createNew(name)
 
 } //end DbService

@@ -22,7 +22,8 @@ app.post('/addData', (request, response) => {
  
     const result = db.createNew(name); 
     result
-    .then(data => response.json(["success" , true]))
+    .then(data => response.json(["success" , "true" ])) //ReferenceError: success is not defined
+    //at file:///C:/Users/ginge/OneDrive/Desktop/expressPractice/server/app.js:25:34
     .catch(err => console.log(err))
 
 })
@@ -39,7 +40,7 @@ app.get('/all', (req, response) => {
     
 });
 
-//update put
+
 
 
 //delete delete
