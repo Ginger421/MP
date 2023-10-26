@@ -30,7 +30,7 @@ function insertRow (data) {
     //code to be added...
 } //end insertRow
 
-function loadHTMLTable(data) {
+function renderHTMLTable(data) {
 
     const table = document.querySelector("table tbody");
 
@@ -41,4 +41,8 @@ function loadHTMLTable(data) {
     if (data.length === 0) {
         table.innerHTML="<tr><td class='no-data' colspan='5' >Table is empty</tr></td>"
     }
+
+    data.forEach(function ({ID, name, dtae_added}) => {
+        
+    });// end forEach
 } //end loadHTMLTable

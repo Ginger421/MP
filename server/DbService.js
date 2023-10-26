@@ -56,16 +56,13 @@ class DbService {
                 connection.query(query, [name, dateAdded] , (error, result) => {
                     if (error) reject (new Error(error.message));
                     resolve(result.insertId);  
-                }
-                ) 
-            //end connection.query
+                }) 
+                //end connection.query
             }); //end const insertId
-            //return response;
 
         } catch (error) {
             console.log(error);
-        }
-        
+        }       
     } //end async createNew(name)
 
 } //end DbService
