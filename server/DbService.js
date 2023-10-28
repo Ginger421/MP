@@ -59,7 +59,11 @@ class DbService {
                 }) 
                 //end connection.query
             }); //end const insertId
-
+            return {
+                ID : insertId,
+                name : name,
+                dateAdded : dateAdded
+            };
         } catch (error) {
             console.log(error);
         }       
