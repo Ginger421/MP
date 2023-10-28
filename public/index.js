@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     fetch('http://localhost:3001/all')
     .then(response => response.json())
-    .then(data => loadHTMLTable(data['data']));
+    .then(data => renderHTMLTable(data['data']));
      
 }); 
 
@@ -48,8 +48,11 @@ function renderHTMLTable(data) {
         tableHTML += `<td>${ID}</td>`;
         tableHTML += `<td>${name}</td>`;
         tableHTML += `<td>${date_added}</td>`;
-        tableHTML += `<td><button fdks>Delete</button></td>`;
-        tableHTML += `<td><button dsj> Edit</button></td>`
+        tableHTML += `<td><button class="delete-row" data-id=${ID}>Delete</button></td>`;
+        tableHTML += `<td><button class="edit" data-id=${ID}> Edit</button></td>`
+        tableHTML += "</tr>"
     });// end forEach
-    //STOPPED 48MINS
+
+    table.innerHTML = tableHTML;
+    //STOPPED 48MINS 50 mins
 } //end loadHTMLTable
