@@ -30,7 +30,6 @@ app.post('/addData', (request, response) => {
 
 //read get
 app.get('/all', (req, response) => {
-    //const db = DbService.getDbServiceInstance();
 
     const result = db.getAll(); //getAll is fromDbService.js
 

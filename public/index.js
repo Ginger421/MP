@@ -1,3 +1,9 @@
+const table = document.querySelector("table tbody");
+
+let tableHTML = " ";
+
+const addBtn = document.getElementById("add-btn");
+
 document.addEventListener("DOMContentLoaded", function () {
     fetch('http://localhost:3001/all')
     .then(response => response.json())
@@ -5,10 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
      
 }); 
 
-//grab data from button
-const addBtn = document.getElementById("add-btn");
-
-//callbackfunction 
+//callbackfunction to grab data and add data to database
 addBtn.onclick = function() {
     const nameData = document.getElementById('name');
     const name = nameData.value;
@@ -32,16 +35,12 @@ function insertRow (data) {
 
 function renderHTMLTable(data) {
 
-    const table = document.querySelector("table tbody");
-
     console.log(data);
 
     if (data.length === 0) {
         table.innerHTML="<tr><td class='no-data' colspan='5' >Table is empty</tr></td>"
         return; 
     }
-
-    let tableHTML = " ";
 
     data.forEach(function ({ID, name, date_added}) {
         tableHTML += "<tr>";
@@ -54,7 +53,6 @@ function renderHTMLTable(data) {
     });// end forEach
 
     table.innerHTML = tableHTML;
-    //STOPPED 48MINS 50 mins
 } //end loadHTMLTable
 
 const deleteBtn = document.getElementsByClassName("delete-row");
