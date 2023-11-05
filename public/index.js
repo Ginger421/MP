@@ -25,8 +25,9 @@ addBtn.onclick = function() {
     headers: {'Content-Type': 'application/json'}
 }) //end fetch
     .then(response => response.json())
-    .then(data => insertRow(data['data']))
-    ; 
+    .then(data => insertRow(data['data']));
+    
+    insertRow() //am working ahead nnklnklmklmk
 } //end addBtn.onClick
 
 function insertRow (data) {
