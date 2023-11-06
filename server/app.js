@@ -5,14 +5,13 @@ import cors from "cors";
 import dotenv from "dotenv"
 dotenv.config();
 let PORT = process.env.PORT;
-//import connection from './connection.js'
 import DbService from './DbService.js';
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
 
-//DECLARED THIS VAR GLOBALLY SO WILL COMMENT OUT THE VARIABLE IN app.get
+//is checking for db connecting and creatinf one if not there
 const db = DbService.getDbServiceInstance();
 
 //create post

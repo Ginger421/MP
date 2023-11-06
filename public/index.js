@@ -16,12 +16,10 @@ addBtn.onclick = function() {
     const nameData = document.getElementById('name');
     const name = nameData.value;
     nameData.value = "";
-    //console.log(name) //this works
 
     fetch('http://localhost:3001/addData', {
     method:'POST',
     body:JSON.stringify({ name : name }),
-    // mode: "cors",
     headers: {'Content-Type': 'application/json'}
 }) //end fetch
     .then(response => response.json())
