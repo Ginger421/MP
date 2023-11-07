@@ -21,8 +21,7 @@ app.post('/addData', (request, response) => {
  
     const result = db.createNew(name); 
     result
-    .then(data => response.json({ data: data})) //ReferenceError: success is not defined
-    //at file:///C:/Users/ginge/OneDrive/Desktop/expressPractice/server/app.js:25:34
+    .then(data => response.json({ data: data})) 
     .catch(err => console.log(err))
 
 })

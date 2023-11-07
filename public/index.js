@@ -28,10 +28,6 @@ addBtn.onclick = function() {
     insertRow() //am working ahead nnklnklmklmk
 } //end addBtn.onClick
 
-function insertRow (data) {
-    //stopped 53 mins
-} //end insertRow
-
 function renderHTMLTable(data) {
 
     console.log(data);
@@ -53,6 +49,14 @@ function renderHTMLTable(data) {
 
     table.innerHTML = tableHTML;
 } //end loadHTMLTable
+
+function insertRow (data) {
+    //stopped 55 mins
+    const newDataAvailable = table.querySelector("no-data");
+    let tableHTML = "<tr>";
+
+
+} //end insertRow
 
 const deleteBtn = document.getElementsByClassName("delete-row");
 
