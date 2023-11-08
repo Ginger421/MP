@@ -51,10 +51,26 @@ function renderHTMLTable(data) {
 } //end loadHTMLTable
 
 function insertRow (data) {
-    //stopped 55 mins
+    //stopped 57 mins
+    //check to see if ...dsjk?????
     const newDataAvailable = table.querySelector("no-data");
     let tableHTML = "<tr>";
 
+    data.forEach(function({ID, name, dateAdded}) {
+        tableHTML += `<td>${ID}</td>`;
+        tableHTML += `<td>${name}</td>`;
+        tableHTML += `<td>${new Date(dateAdded).toLocaleString()}</td>`;
+        tableHTML += `<td><button class="delete-row" data-id=${ID}>Delete</button></td>`;
+        tableHTML += `<td><button class="edit" data-id=${ID}>Edit</button></td>`
+    }) //end foreach
+
+    tableHTML += "</tr>";
+
+    if (newDataAvailable) {
+        table.innerHTML = tableHTML;
+    } else {
+
+    }
 
 } //end insertRow
 
