@@ -25,7 +25,7 @@ addBtn.onclick = function() {
     .then(response => response.json())
     .then(data => insertRow(data['data']));
     
-    insertRow() //am working ahead nnklnklmklmk
+    //insertRow() //am working ahead nnklnklmklmk
 } //end addBtn.onClick
 
 function renderHTMLTable(data) {
@@ -51,9 +51,10 @@ function renderHTMLTable(data) {
 } //end loadHTMLTable
 
 function insertRow (data) {
+    console.log(data);
     //stopped 57 mins
     //check to see if ...dsjk?????
-    const newDataAvailable = table.querySelector("no-data");
+    const hasData = table.querySelector("no-data");
     let tableHTML = "<tr>";
 
     data.forEach(function({ID, name, dateAdded}) {
@@ -66,11 +67,12 @@ function insertRow (data) {
 
     tableHTML += "</tr>";
 
-    if (newDataAvailable) {
+    if (hasData) {
         table.innerHTML = tableHTML;
     } else {
-
-    }
+        const newRow = table.insertRow();
+        newRow.innerHTML = tableHTML;
+    } //end if else
 
 } //end insertRow
 
