@@ -34,7 +34,3 @@ No testing was done
 ## Questions
 Email: gingerowen0421@gmail.com
 GitHub: https://github.com/Ginger421
-
-
-
-[def]: #contribute
