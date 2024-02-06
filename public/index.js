@@ -57,13 +57,19 @@ function insertRow (data) {
     const hasData = table.querySelector("no-data");
     let tableHTML = "<tr>";
 
-    data.forEach(function({ID, name, dateAdded}) {
-        tableHTML += `<td>${ID}</td>`;
-        tableHTML += `<td>${name}</td>`;
-        tableHTML += `<td>${new Date(dateAdded).toLocaleString()}</td>`;
-        tableHTML += `<td><button class="delete-row" data-id=${ID}>Delete</button></td>`;
-        tableHTML += `<td><button class="edit" data-id=${ID}>Edit</button></td>`
-    }) //end foreach
+    for (var key in data) {
+        if (data.hasOwnProperty(key)) {
+            if (key === dateAdded) {
+                data [key] = new Date (data[key]).toLocaleString()
+            }
+
+            tableHTML += `<td>${data[key]}</td>`
+        }
+        
+    }
+
+        tableHTML += `<td><button class="delete-row" data-id=${data.ID}>Delete</button></td>`;
+        tableHTML += `<td><button class="edit" data-id=${data.ID}>Edit</button></td>`
 
     tableHTML += "</tr>";
 
