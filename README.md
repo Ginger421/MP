@@ -2,7 +2,7 @@
 # ExpressPractice
 
 ## Description
-This application was cretaed to allow users to upload, retrive and edit information. It is a basic fullstack application that usilizes MySQL for database queries, Express.js to access the server from the front end, HTML, CSS, JavaScript, Node, cors, and dotenv to protect sensitive information
+This application was cretaed to allow users to upload, retrive and edit information. It is a basic fullstack application that usilizes MySQL for database queries, Express.js to access the server from the front end, HTML, CSS, JavaScript, Node, cors, and dotenv to protect sensitive information. A create account and sign in option will be created
 
 Heroku was used to deploy the application
 
