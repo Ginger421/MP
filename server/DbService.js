@@ -69,6 +69,15 @@ class DbService {
         }       
     } //end async createNew(name)
 
+    //delete
+    async deleteUser()  {
+        try {
+            
+        } catch (error) {
+            
+        }
+    }; //end deleteUser
+
 } //end DbService
 
 export default DbService
