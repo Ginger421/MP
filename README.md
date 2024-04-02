@@ -4,9 +4,10 @@
 ## Description
 This application was cretaed to allow users to upload, retrive and edit information. It is a basic fullstack application that usilizes MySQL for database queries, Express.js to access the server from the front end, HTML, CSS, JavaScript, Node, cors, and dotenv to protect sensitive information. A create account and sign in option will be created
 
-Heroku was used to deploy the application
+Heroku was used to deploy the application. 
 
 You can find the repo at https://github.com/Ginger421/MP
+Live site: 
 
 Live site
 ## Table of Contents
@@ -21,7 +22,7 @@ Live site
 If you wish to access the application locally
     1. clone the repo on GitHub
     2. run npm i to install dependencies 
-    3. create a .env file and add your protected information
+    3. create a .env file and add your protected information then create a .gitignore file and add the .env file to it
     4. open the application using npm start 
     5. open the browser with the preferred local host. While testing users must the front end and backend simultanously
 ## Usage
