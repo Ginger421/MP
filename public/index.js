@@ -21,6 +21,8 @@ addBtn.onclick = function() {
     .then(response => response.json())
     .then(data => insertRow(data['data']));
 
+    console.log(data); //added to see if/what grabbing???????
+
     insertRow(data) 
     renderHTMLTable(data) //trying to see if this updates table after createing new
     
@@ -39,7 +41,7 @@ function insertRow (data) {
     console.log(data);
     //stopped 57 mins
     //check to see if ...dsjk?????
-    const hasData = table.querySelector("no-data");
+    const hasData = table.querySelector(".no-data");
     let tableHTML = "<tr>";
 
     for (var key in data) {
@@ -71,7 +73,7 @@ function insertRow (data) {
 function renderHTMLTable(data) {
     const table = document.querySelector("table tbody");
 
-    console.log(data);
+    console.log(data); //is returning array
 
     if (data.length === 0) {
         table.innerHTML="<tr><td class='no-data' colspan='5' >Table is empty</tr></td>"
@@ -79,6 +81,7 @@ function renderHTMLTable(data) {
     }
 
     let tableHTML = " ";
+    console.log(tableHTML); //see if grabbing is returning nothing
 
     data.forEach(function ({ID, name, date_added}) {
         tableHTML += "<tr>";
@@ -91,4 +94,5 @@ function renderHTMLTable(data) {
     });// end forEach
 
     table.innerHTML = tableHTML;
+    console.log(tableHTML); //added this to see if grabbing tableHTML????? is returning HTML
 } //end loadHTMLTable
