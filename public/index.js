@@ -95,4 +95,6 @@ function renderHTMLTable(data) {
 
     table.innerHTML = tableHTML;
     console.log(tableHTML); //added this to see if grabbing tableHTML????? is returning HTML
-} //end loadHTMLTable
+} //end loadHTMLT
+
+//video 52 mins he's still refreshing page not auto updatein when hit submit

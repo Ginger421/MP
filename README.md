@@ -20,11 +20,12 @@ Live site
 
 ## Installation 
 If you wish to access the application locally
-    1. clone the repo on GitHub
+    1. clone the repo on GitHub and create a local repository
     2. run npm i to install dependencies 
-    3. create a .env file and add your protected information then create a .gitignore file and add the .env file to it
+    3. create a .env file with your protected information and make sure to add it to a .gitignore file 
     4. open the application using npm start 
     5. open the browser with the preferred local host. While testing users must the front end and backend simultanously
+    
 ## Usage
 After installing the app users can select from a list and edit the list. Or, users can visit the site at ______
 
